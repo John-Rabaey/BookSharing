@@ -11,7 +11,7 @@ import java.util.*;
 class SortBookList {
 
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         int lcsTest = getLCS("hello", "");
 
@@ -34,18 +34,21 @@ class SortBookList {
         }
 
 
-    }
+    }*/
 
-    static void sortBookList(ArrayList<String> bookList, String searchString) {
+    static void sortBookList(ArrayList<Book> bookList, String searchString) {
+
+
         //search is the user text searched for
         final String search = searchString;
 
-        Collections.sort(bookList, new Comparator<String>() {
 
-            public int compare(String s1, String s2) {
+        Collections.sort(bookList, new Comparator<Book>() {
 
-                int lX = getLCS(s1, search);
-                int lY = getLCS(s2, search);
+            public int compare(Book b1, Book b2) {
+
+                int lX = getLCS(b1.getBookName(), search);
+                int lY = getLCS(b2.getBookName(), search);
 
                 return lX - lY;
 
@@ -53,8 +56,8 @@ class SortBookList {
 
 
         });
-
     }
+
 
 
     public static int getLCS(String string1, String string2) {
