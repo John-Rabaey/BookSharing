@@ -1,6 +1,7 @@
 package com.example.yeabkalwubshit.booksharing;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -69,7 +70,12 @@ public class HomePage extends AppCompatActivity {
             goButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    entry.onButtonPress();
+                    switch (entry.activityName) {
+                        case "Post" : {
+                            openPostItem();
+                            break;
+                        }
+                    }
                 }
             });
 
@@ -79,5 +85,11 @@ public class HomePage extends AppCompatActivity {
 
             return convertView;
         }
+    }
+
+    private void openPostItem() {
+        Intent intent = new Intent(HomePage.this,
+                PostItem.class);
+        startActivity(intent);
     }
 }
