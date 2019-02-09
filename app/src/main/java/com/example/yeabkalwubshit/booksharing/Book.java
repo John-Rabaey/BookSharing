@@ -7,7 +7,7 @@ public class Book {
     private String departmentName;
 
     public Book(long id, String bookName) {
-        this.id = long;
+        this.id = id;
         this.bookName = bookName;
     }
 
