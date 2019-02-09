@@ -12,6 +12,7 @@ public class NetworkServices {
                     Mocks.names[i],
                     Mocks.departments[i],
                     Mocks.descriptions[i],
+                    "",
                     true);
             result.add(book);
         }

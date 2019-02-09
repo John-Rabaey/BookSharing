@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PostItem extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class PostItem extends AppCompatActivity {
     private EditText mBookSubjectBox;
     private EditText mBookDescriptionBox;
     private RadioButton mNewButton;
+    private TextView mProfessorBox;
 
     private Button mSubmitButton;
 
@@ -23,11 +25,14 @@ public class PostItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_item);
 
+        setTitle("Post Item");
+
         mBookNameBox = findViewById(R.id.bookName);
         mBookSubjectBox = findViewById(R.id.bookSubject);
         mBookDescriptionBox = findViewById(R.id.bookDescription);
         mNewButton = findViewById(R.id.newBook);
         mSubmitButton = findViewById(R.id.submitLising);
+        mProfessorBox = findViewById(R.id.professor);
 
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,9 +65,10 @@ public class PostItem extends AppCompatActivity {
         String name = mBookNameBox.getText().toString();
         String subject = mBookSubjectBox.getText().toString();
         String description = mBookDescriptionBox.getText().toString();
+        String professor = mProfessorBox.getText().toString();
 
         boolean isNew = mNewButton.isChecked();
-        Book book = new Book(id, name, subject, description, isNew);
+        Book book = new Book(id, name, subject, description, professor, isNew);
         return book;
 
     }
@@ -75,10 +81,12 @@ public class PostItem extends AppCompatActivity {
         String name = mBookNameBox.getText().toString();
         String subject = mBookSubjectBox.getText().toString();
         String description = mBookDescriptionBox.getText().toString();
+        String professor = mProfessorBox.getText().toString();
 
         boolean isValid = name.length() != 0
                 && subject.length() != 0
-                && description.length() != 0;
+                && description.length() != 0
+                && professor.length() != 0;
         return isValid;
     }
 
