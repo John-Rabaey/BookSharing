@@ -22,12 +22,12 @@
         android:text="Name" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/bookName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Book name"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView5"
@@ -36,12 +36,12 @@
         android:text="Subject" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/bookSubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Book subject (department)"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView6"
@@ -50,12 +50,12 @@
         android:text="Description" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/bookDescription"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Book description"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView7"
@@ -68,14 +68,14 @@
         android:layout_height="wrap_content" >
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/newBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="New" />
 
         <RadioButton
-            android:id="@+id/radioButtonUsed"
+            android:id="@+id/usedBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,7 +83,7 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitLising"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SUBMIT" />

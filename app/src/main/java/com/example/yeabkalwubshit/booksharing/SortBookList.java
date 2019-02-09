@@ -37,12 +37,8 @@ class SortBookList {
     }
 
     static void sortBookList(ArrayList<String> bookList, String searchString) {
-
-
         //search is the user text searched for
-
         final String search = searchString;
-
 
         Collections.sort(bookList, new Comparator<String>() {
 
