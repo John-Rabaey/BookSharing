@@ -24,6 +24,8 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        setTitle(userName + "'s Home Page");
+
         entryList = findViewById(R.id.homePageList);
 
         HomePageEntry post = new HomePageEntry(
@@ -32,9 +34,9 @@ public class HomePage extends AppCompatActivity {
                 "Post items"
         );
         HomePageEntry feed = new HomePageEntry(
-                "Feed",
-                "See what others posted.",
-                "Get Feed"
+                "Find A Book",
+                "Search a book among postings.",
+                "Find Books"
         );
 
         HomePageEntry[] homePageEntries = new HomePageEntry[] {post, feed};
