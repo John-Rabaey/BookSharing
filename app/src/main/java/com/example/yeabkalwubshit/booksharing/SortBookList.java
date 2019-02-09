@@ -4,7 +4,7 @@ import java.util.*;
 
 
 /* Write a method that takes (ArrayList) and a (Search Text) 
- * Return a new array sorted by the Least Common Subsequence
+ * Return a new array sorted by the Least Common Subsequence.
  * 
  */
 
