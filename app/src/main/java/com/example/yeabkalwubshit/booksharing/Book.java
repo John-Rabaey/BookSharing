@@ -29,11 +29,10 @@ public class Book {
     }
 
 
-
-
     public String getOwnerName() {return this.ownerName;}
     public long getId() {return this.id;}
     public String getDepartment() {return this.departmentName;}
     public String getBookName() {return this.bookName;}
+    public String getDescription() { return this.description; }
 
 }

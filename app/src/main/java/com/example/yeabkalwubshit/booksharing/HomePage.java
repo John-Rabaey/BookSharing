@@ -75,6 +75,9 @@ public class HomePage extends AppCompatActivity {
                             openPostItem();
                             break;
                         }
+                        case "Find A Book" : {
+                            openSearchBooks();
+                        }
                     }
                 }
             });
@@ -90,6 +93,12 @@ public class HomePage extends AppCompatActivity {
     private void openPostItem() {
         Intent intent = new Intent(HomePage.this,
                 PostItem.class);
+        startActivity(intent);
+    }
+
+    private void openSearchBooks() {
+        Intent intent = new Intent(HomePage.this,
+                SearchBooks.class);
         startActivity(intent);
     }
 }

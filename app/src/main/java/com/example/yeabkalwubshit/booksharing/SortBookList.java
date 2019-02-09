@@ -1,5 +1,7 @@
 package com.example.yeabkalwubshit.booksharing;
 
+import android.arch.lifecycle.ViewModelProvider;
+
 import java.util.*;
 
 
@@ -35,6 +37,18 @@ class SortBookList {
 
 
     }*/
+
+    static ArrayList<Book> getAndFilterBookList(String department) {
+        ArrayList<Book> books = NetworkServices.fetchBooks();
+        if(department.equals("")) return books;
+        ArrayList<Book> filtered = new ArrayList<>();
+        for(Book book : books) {
+            if(book.getDepartment().equals(department)) {
+                filtered.add(book);
+            }
+        }
+        return filtered;
+    }
 
     static void sortBookList(ArrayList<Book> bookList, String searchString) {
 

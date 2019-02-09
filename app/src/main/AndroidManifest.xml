@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomePage" />
-        <activity android:name=".PostItem"></activity>
+        <activity android:name=".PostItem" />
+        <activity android:name=".SearchBooks"></activity>
     </application>
 
 </manifest>
