@@ -10,17 +10,4 @@ public class HomePageEntry {
         this.description = desc;
         this.buttonLabel = label;
     }
-
-    void onButtonPress() {
-        switch(activityName) {
-            case "FEED": {
-                // Show feed
-                break;
-            }
-            case "POST": {
-                // Show posting page
-                break;
-            }
-        }
-    }
 }
