@@ -29,7 +29,7 @@ public class HomePage extends AppCompatActivity {
         HomePageEntry post = new HomePageEntry(
                 "Post",
                 "Post items you want to exchange/sell.",
-                "Post itmes"
+                "Post items"
         );
         HomePageEntry feed = new HomePageEntry(
                 "Feed",
