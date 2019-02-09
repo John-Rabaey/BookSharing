@@ -9,7 +9,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="96dp"
+        android:background="@drawable/UD"
         android:orientation="horizontal">
 
     </LinearLayout>
@@ -24,7 +25,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="User Name" />
+            android:text="User Name"
+            android:textColor="@color/colorUDBlue" />
 
         <EditText
             android:id="@+id/userNameText"
@@ -46,7 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Password" />
+            android:text="Password"
+            android:textColor="@color/colorUDBlue" />
 
         <EditText
             android:id="@+id/passwordText"
@@ -68,7 +71,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Login" />
+            android:text="Login"
+            android:textColor="@color/colorUDBlue" />
     </LinearLayout>
 
 </LinearLayout>
